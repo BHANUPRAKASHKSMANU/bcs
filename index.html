@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Frendend — Simple Site</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Frendend</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+      <nav class="nav" id="siteNav">
+        <a href="#features">Features</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Welcome to Frendend</h1>
+        <p>Simple, friendly landing page built with only HTML, CSS and JS.</p>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </section>
+
+    <section id="features" class="container features">
+      <h2>Features</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Responsive</h3>
+          <p>Works well on phones and desktops.</p>
+        </div>
+        <div class="card">
+          <h3>Lightweight</h3>
+          <p>No frameworks — just plain HTML/CSS/JS.</p>
+        </div>
+        <div class="card">
+          <h3>Accessible</h3>
+          <p>Keyboard-friendly and semantic markup.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="container gallery">
+      <h2>Gallery</h2>
+      <div class="grid gallery-grid">
+        <div class="thumb">A</div>
+        <div class="thumb">B</div>
+        <div class="thumb">C</div>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact</h2>
+      <form id="contactForm" novalidate>
+        <label>
+          Name
+          <input type="text" name="name" id="name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" id="email" required>
+        </label>
+        <label>
+          Message
+          <textarea name="message" id="message" rows="4" required></textarea>
+        </label>
+        <button class="btn" type="submit">Send</button>
+        <p id="formMsg" class="form-msg" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> Frendend — Built with ❤️</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
